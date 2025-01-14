@@ -67,7 +67,7 @@ public class TopDownShooterControler : MonoBehaviour
             TopDownPlayerProjectile projectile =
                 Instantiate(_prefabProjectile, _firePoint.position, Quaternion.identity);
             projectile.transform.forward = _aimVector;
-            _fireImpulseSource.GenerateImpulse();
+            if(_fireImpulseSource)_fireImpulseSource.GenerateImpulse();
             OnFire?.Invoke(this , EventArgs.Empty);
             _fireLight.Fire();
         }
@@ -106,8 +106,8 @@ public class TopDownShooterControler : MonoBehaviour
 
         //Debug.Log( angle);
         Vector3 displayVec = RotateXZ(moveVector, -angle);
-        _animator.SetFloat("X", displayVec.x);
-        _animator.SetFloat("Z", displayVec.z);
+        if(_animator)_animator.SetFloat("X", displayVec.x);
+        if(_animator)_animator.SetFloat("Z", displayVec.z);
 
     }
     private void ManagerIsGrounded() {

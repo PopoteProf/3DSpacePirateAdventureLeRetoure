@@ -21,7 +21,7 @@ public  class EnergieBridg : MonoBehaviour
         _bridgeCollider.gameObject.SetActive(false);
         _cableMesh.material.SetFloat("_EnergieOn", 0);
         _bridgeMesh.material.SetFloat("_DisolveProgress", 0);
-        _virtualCamera.enabled = false;
+        if(_virtualCamera)_virtualCamera.enabled = false;
         
     }
 
@@ -30,7 +30,7 @@ public  class EnergieBridg : MonoBehaviour
         _bridgeMesh.gameObject.SetActive(true);
         _cableMesh.material.SetFloat("_EnergieOn", 1);
         _activation = true;
-        _virtualCamera.enabled = true;
+        if(_virtualCamera)_virtualCamera.enabled = true;
         GameStaticManager.SetPause(true);
     }
 
@@ -41,7 +41,7 @@ public  class EnergieBridg : MonoBehaviour
         if (_timer >= _fadeInTime) {
             _activation = false;
             _bridgeMesh.material.SetFloat("_DisolveProgress", 1);
-            _virtualCamera.enabled = false;
+            if(_virtualCamera)_virtualCamera.enabled = false;
             GameStaticManager.SetPause(false);
         }
     }

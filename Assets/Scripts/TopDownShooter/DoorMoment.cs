@@ -22,13 +22,14 @@ public class DoorMoment : MonoBehaviour{
     private void Start() {
         _doorStartPos = _door.position;
         ActivateGameObject(false);
+        if(_vCam)_vCam.enabled = false;
         
     }
 
     public void Activate() {
         _isActivated = true;
-        _cISRumble.GenerateImpulse();
-        _vCam.enabled = true;
+        if(_cISRumble)_cISRumble.GenerateImpulse();
+        if(_vCam)_vCam.enabled = true;
         AudioManager.Instance.PlayMusic(_music.GetSound(), 1, _music.Volume);
         _doorSparks.Play();
         ActivateGameObject(true);
@@ -49,8 +50,8 @@ public class DoorMoment : MonoBehaviour{
         _door.position = Vector3.Lerp(_doorStartPos, _doorEndPos, _animationCurve.Evaluate(_time / _momentTime));
         if (_time >= _momentTime) {
             _door.position = _doorEndPos;
-            _cIS_FinalBumb.GenerateImpulse();
-            _vCam.enabled = false;
+            if(_cIS_FinalBumb)_cIS_FinalBumb.GenerateImpulse();
+            if(_vCam)_vCam.enabled = false;
             _isActivated = false;
             _doorSparks.Stop();
 

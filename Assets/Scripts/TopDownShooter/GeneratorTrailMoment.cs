@@ -11,10 +11,10 @@ public class GeneratorTrailMoment : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera _virtualCamera;
     [SerializeField] private SplineAnimate _splineAnimate;
     [SerializeField] private MeshRenderer _meshCableToRail;
-    [SerializeField] private CinemachineVirtualCamera _originalVcam;
+    //[SerializeField] private CinemachineVirtualCamera _originalVcam;
 
-    [Space(10), Header("OnComplet")] [SerializeField]
-    private Transform _newVCamPos;
+    [Space(10), Header("OnComplet")] //[SerializeField]
+    //private Transform _newVCamPos;
     [SerializeField] private MeshRenderer _meshCableToDoor;
     [SerializeField] private TopDownConsole _doorConsole;
     public UnityEvent _onComplet;
@@ -32,6 +32,7 @@ public class GeneratorTrailMoment : MonoBehaviour
     public void StartMoment() {
         _splineAnimate.Play();
         _virtualCamera.enabled = true;
+        _virtualCamera.Priority = 50;
         _meshCableToRail.material.SetFloat("_EnergieOn", 1);
         _isInAnimation = true;
     }
@@ -40,9 +41,10 @@ public class GeneratorTrailMoment : MonoBehaviour
         //_originalVcam.gameObject.SetActive(false);
         //_originalVcam.transform.position = _newVCamPos.position;
         //_originalVcam.gameObject.SetActive(true);
-        _originalVcam.ForceCameraPosition(_newVCamPos.position, _newVCamPos.rotation);
+        //_originalVcam.ForceCameraPosition(_newVCamPos.position, _newVCamPos.rotation);
         _doorConsole.ChangeStat(TopDownConsole.Stat.OnLine);
         _meshCableToDoor.material.SetFloat("_EnergieOn", 1);
+        _virtualCamera.Priority = 0;
         _virtualCamera.enabled = false;
         _isInAnimation = false;
         _onComplet?.Invoke();
