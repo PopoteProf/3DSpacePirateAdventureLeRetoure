@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7f59e54f2bfd184b9dd451a678d089b, type: 3}
+  m_Name: Porte2
+  m_EditorClassIdentifier: 
+  PositionNoise:
+  - X:
+      Frequency: 3.1
+      Amplitude: 2.9
+      Constant: 0
+    Y:
+      Frequency: 2.6
+      Amplitude: 3.6
+      Constant: 0
+    Z:
+      Frequency: 3.4
+      Amplitude: 2.5
+      Constant: 0
+  - X:
+      Frequency: 2.3
+      Amplitude: 3.4
+      Constant: 0
+    Y:
+      Frequency: 1.4
+      Amplitude: 1.98
+      Constant: 0
+    Z:
+      Frequency: 2.6
+      Amplitude: 3.15
+      Constant: 0
+  OrientationNoise:
+  - X:
+      Frequency: 3
+      Amplitude: 2.3
+      Constant: 0
+    Y:
+      Frequency: 1.3
+      Amplitude: 1.9
+      Constant: 0
+    Z:
+      Frequency: 3.5
+      Amplitude: 2.6
+      Constant: 0
+  - X:
+      Frequency: 7
+      Amplitude: 4.1
+      Constant: 0
+    Y:
+      Frequency: 4.2
+      Amplitude: 2.7
+      Constant: 0
+    Z:
+      Frequency: 2.9
+      Amplitude: 4.21
+      Constant: 0
