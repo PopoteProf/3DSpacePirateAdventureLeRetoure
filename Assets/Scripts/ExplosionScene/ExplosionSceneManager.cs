@@ -73,7 +73,7 @@ public class ExplosionSceneManager : MonoBehaviour
                 }
                 else {
                     Instantiate(_prefabBigExplosion, hit.point, Quaternion.identity);
-                    AudioManager.Instance.PlaySFX(_aeBigExplosion);
+                   // AudioManager.Instance.PlaySFX(_aeBigExplosion);
                     if(_isBigExplostion)_isBigExplostion.GenerateImpulse();
                 }
             }
