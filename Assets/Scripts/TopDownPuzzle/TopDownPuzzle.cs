@@ -12,6 +12,7 @@ public class TopDownPuzzle : MonoBehaviour
     [SerializeField] private float _moveSpeed = 1;
     [SerializeField] private GameObject _controlleDisplay;
     [SerializeField] private TopDownPuzzle _topDownPuzzle;
+    [SerializeField] private Animator _animator;
     private CharacterController _characterController;
 
     private bool hadSwitched; 
@@ -29,7 +30,9 @@ public class TopDownPuzzle : MonoBehaviour
             _topDownPuzzle.SetControlled(true);
             SetControlled(false);
             Debug.Log("Switch");
+            if (_animator) _animator.SetTrigger("DoTransfer");
         }
+        if (Input.GetButtonDown("Fire1"))if (_animator) _animator.SetTrigger("DoEmote");
         
     }
 
@@ -41,6 +44,10 @@ public class TopDownPuzzle : MonoBehaviour
     protected virtual void ManageMovement() {
         Vector3 moveVector = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         _characterController.Move(moveVector.normalized * _moveSpeed * Time.deltaTime);
+        if (_animator == null) return;
+        bool isWalking = moveVector.magnitude > 0.5f;
+        if( isWalking) _animator.transform.forward = moveVector;
+        _animator.SetBool("IsWalking", isWalking);
     }
 
     public void SetControlled(bool controlled) {
