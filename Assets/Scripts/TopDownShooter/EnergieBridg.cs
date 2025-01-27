@@ -8,7 +8,8 @@ public  class EnergieBridg : MonoBehaviour
     [SerializeField] private Collider _bridgeCollider;
     [SerializeField] private MeshRenderer _cableMesh;
     [SerializeField] private MeshRenderer _bridgeMesh;
-    [SerializeField] private CinemachineVirtualCamera _virtualCamera;
+    [SerializeField] private CinemachineCamera _virtualCamera;
+    [SerializeField] private Animator _animator;
 
     [SerializeField] private float _fadeInTime= 2;
     
@@ -21,7 +22,8 @@ public  class EnergieBridg : MonoBehaviour
         _bridgeCollider.gameObject.SetActive(false);
         _cableMesh.material.SetFloat("_EnergieOn", 0);
         _bridgeMesh.material.SetFloat("_DisolveProgress", 0);
-        if(_virtualCamera)_virtualCamera.enabled = false;
+        if(_virtualCamera)_virtualCamera.Priority = 0;
+        if (_animator!=null) _animator.SetBool("IsDeploy", false);
         
     }
 
@@ -30,7 +32,7 @@ public  class EnergieBridg : MonoBehaviour
         _bridgeMesh.gameObject.SetActive(true);
         _cableMesh.material.SetFloat("_EnergieOn", 1);
         _activation = true;
-        if(_virtualCamera)_virtualCamera.enabled = true;
+        if(_virtualCamera)_virtualCamera.Priority = 15;
         GameStaticManager.SetPause(true);
     }
 
@@ -41,7 +43,8 @@ public  class EnergieBridg : MonoBehaviour
         if (_timer >= _fadeInTime) {
             _activation = false;
             _bridgeMesh.material.SetFloat("_DisolveProgress", 1);
-            if(_virtualCamera)_virtualCamera.enabled = false;
+            if(_virtualCamera)_virtualCamera.Priority = 0;
+            if (_animator!=null) _animator.SetBool("IsDeploy", true);
             GameStaticManager.SetPause(false);
         }
     }
