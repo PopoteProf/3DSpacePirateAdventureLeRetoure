@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class CorridorMoment : MonoBehaviour {
 
-    [SerializeField] private CinemachineVirtualCamera _vCam;
+    [SerializeField] private CinemachineCamera _vCam;
     public void EnterCorridor() {
-        if(_vCam)_vCam.enabled = true;
+        if(_vCam)_vCam.Priority =15;
     }
 
     public void ExitCorridor() {
-        if(_vCam)_vCam.enabled = false;
+        if(_vCam)_vCam.Priority =0;
     }
 }
