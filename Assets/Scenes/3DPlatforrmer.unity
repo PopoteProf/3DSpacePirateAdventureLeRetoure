@@ -5668,15 +5668,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4246551073649170812, guid: 45f452c0ec17eb941aeb990b3e86c5ca, type: 3}
+      propertyPath: m_Name
+      value: Runner
+      objectReference: {fileID: 0}
     - target: {fileID: 4342209419707480590, guid: 45f452c0ec17eb941aeb990b3e86c5ca, type: 3}
       propertyPath: m_Name
       value: Player3DPlatformer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7084806592000300259, guid: 45f452c0ec17eb941aeb990b3e86c5ca, type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 1288419543859856673}
+    - target: {fileID: 8723000342510950073, guid: 45f452c0ec17eb941aeb990b3e86c5ca, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45f452c0ec17eb941aeb990b3e86c5ca, type: 3}
+--- !u!95 &1288419543859856673 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7873220034625506950, guid: 45f452c0ec17eb941aeb990b3e86c5ca, type: 3}
+  m_PrefabInstance: {fileID: 1288419543859856672}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1448812116818129589
 PrefabInstance:
   m_ObjectHideFlags: 0
