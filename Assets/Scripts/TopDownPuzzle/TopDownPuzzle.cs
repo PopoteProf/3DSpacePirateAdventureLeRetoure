@@ -27,8 +27,11 @@ public class TopDownPuzzle : MonoBehaviour
         ManageMovement();
 
         if (Input.GetKeyDown(KeyCode.Tab)&&!hadSwitched) {
-            _topDownPuzzle.SetControlled(true);
-            SetControlled(false);
+            if (_topDownPuzzle != null) {
+                _topDownPuzzle.SetControlled(true);
+                SetControlled(false);
+            }
+
             Debug.Log("Switch");
             if (_animator) _animator.SetTrigger("DoTransfer");
         }
