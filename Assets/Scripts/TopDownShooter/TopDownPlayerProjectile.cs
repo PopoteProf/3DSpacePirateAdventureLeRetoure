@@ -35,12 +35,25 @@ public class TopDownPlayerProjectile : MonoBehaviour {
             if (hits.Length != 0) {
                 foreach (var hit in hits) {
                     if (hit.collider.CompareTag("Monster")) {
-                        hit.collider.GetComponent<TopDownMonster>().TakeHit(hit.point, transform.forward*_physicsImpacetPower);
-                        GameObject ps = Instantiate(_prefabsPsBlood, hit.point, Quaternion.identity);
-                        ps.transform.forward = hit.normal;
-                        Destroy(gameObject);
-                        _isFlying = false;
-                        return;
+                        if (hit.collider.GetComponent<TopDownMonster>() != null)
+                        {
+                            hit.collider.GetComponent<TopDownMonster>()
+                                .TakeHit(hit.point, transform.forward * _physicsImpacetPower);
+                            GameObject ps = Instantiate(_prefabsPsBlood, hit.point, Quaternion.identity);
+                            ps.transform.forward = hit.normal;
+                            Destroy(gameObject);
+                            _isFlying = false;
+                            return;
+                        }
+                        if (hit.collider.GetComponent<TopDownStupidMonsters>() != null)
+                        {
+                            hit.collider.GetComponent<TopDownStupidMonsters>().SetDeath();
+                            GameObject ps = Instantiate(_prefabsPsBlood, hit.point, Quaternion.identity);
+                            ps.transform.forward = hit.normal;
+                            Destroy(gameObject);
+                            _isFlying = false;
+                            return;
+                        }
                     } 
                 }
 
