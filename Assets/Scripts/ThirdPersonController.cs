@@ -66,9 +66,9 @@ public class ThirdPersonController : MonoBehaviour
         
         
         Vector3 animVec = transform.InverseTransformDirection(_characterController.velocity);
-        _animator.SetFloat("X", animVec.x);
-        _animator.SetFloat("Y", animVec.z);
-        _animator.SetFloat("Rot", xrot);
+        if (_animator)_animator.SetFloat("X", animVec.x);
+        if (_animator)_animator.SetFloat("Y", animVec.z);
+        if (_animator)_animator.SetFloat("Rot", xrot);
 
         if (_aimTarget) {
             float yRot = Input.GetAxis("Mouse Y");
