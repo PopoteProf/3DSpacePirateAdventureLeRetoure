@@ -3,7 +3,27 @@ guid: 78c09820b0d2ace40affb307b2fca4cf
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SpacePirate_M
+    second: {fileID: 2100000, guid: 134442f8bbc1fd14fa993b7cf4f30fa7, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SpacePirate_diffuse
+    second: {fileID: 2800000, guid: 62046fd18948db34095796f9bda5a67f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SpacePirate_normal
+    second: {fileID: 2800000, guid: ebb31f8289de3d94b92ba01b0903cb00, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SpacePirate_specular
+    second: {fileID: 2800000, guid: 292da494841f4a64bafd2d7973bd1fa6, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -31,7 +51,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: mixamo.com
+      name: A_Idle
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
@@ -42,7 +62,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
