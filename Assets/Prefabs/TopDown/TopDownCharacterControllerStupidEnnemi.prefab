@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a702333b00494724848758f00f56d69f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 3179350851430750233}
+  _animator: {fileID: 4167019938229692902}
   _aggroDistance: 15
   _attackDistance: 2
   _moveSpeed: 2
@@ -201,13 +201,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d93e6a7d254cdad4fa760d66e1d6856f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4167019938229692902}
   m_SourcePrefab: {fileID: 100100000, guid: d93e6a7d254cdad4fa760d66e1d6856f, type: 3}
---- !u!95 &3179350851430750233 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: d93e6a7d254cdad4fa760d66e1d6856f, type: 3}
+--- !u!1 &8193365732693645529 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d93e6a7d254cdad4fa760d66e1d6856f, type: 3}
   m_PrefabInstance: {fileID: 9040351080132453768}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &4167019938229692902
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8193365732693645529}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: d93e6a7d254cdad4fa760d66e1d6856f, type: 3}
+  m_Controller: {fileID: 9100000, guid: 62f19350a1607384cb36f24bed75e415, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+    'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+    'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+    'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
+    'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'Dying Backwards'"
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &8862941223143359075 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d93e6a7d254cdad4fa760d66e1d6856f, type: 3}
