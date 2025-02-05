@@ -169,38 +169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3658e48e62893a43ab05e3fd072d6be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &283744400 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 141e8f4ce975f4e469c5dc247975b453, type: 3}
-  m_PrefabInstance: {fileID: 1264373717}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &283744401 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 141e8f4ce975f4e469c5dc247975b453, type: 3}
-  m_PrefabInstance: {fileID: 1264373717}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &283744402
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 283744400}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ac008983708b45846a9292e20316bad1, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!43 &296431516
 Mesh:
   m_ObjectHideFlags: 0
@@ -1271,66 +1239,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1001 &1264373717
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1327508532}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 141e8f4ce975f4e469c5dc247975b453, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 141e8f4ce975f4e469c5dc247975b453, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 141e8f4ce975f4e469c5dc247975b453, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 141e8f4ce975f4e469c5dc247975b453, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 141e8f4ce975f4e469c5dc247975b453, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 141e8f4ce975f4e469c5dc247975b453, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 141e8f4ce975f4e469c5dc247975b453, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 141e8f4ce975f4e469c5dc247975b453, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 141e8f4ce975f4e469c5dc247975b453, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 141e8f4ce975f4e469c5dc247975b453, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 141e8f4ce975f4e469c5dc247975b453, type: 3}
-      propertyPath: m_Name
-      value: Zombie Idle
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 141e8f4ce975f4e469c5dc247975b453, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 283744402}
-  m_SourcePrefab: {fileID: 100100000, guid: 141e8f4ce975f4e469c5dc247975b453, type: 3}
 --- !u!1001 &1282554867
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1392,11 +1300,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4a95d6be34b2c74d81de1547ea492a6, type: 3}
---- !u!4 &1327508532 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5993874565219236664, guid: 38d49281dcc70304eb15351b58e50531, type: 3}
-  m_PrefabInstance: {fileID: 6033263917964277001}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1407351601
 GameObject:
   m_ObjectHideFlags: 0
@@ -3735,17 +3638,9 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 196056514}
-    - target: {fileID: 1511822282552085978, guid: 38d49281dcc70304eb15351b58e50531, type: 3}
-      propertyPath: _animator
-      value: 
-      objectReference: {fileID: 283744402}
     - target: {fileID: 1941034001078187042, guid: 38d49281dcc70304eb15351b58e50531, type: 3}
       propertyPath: m_Name
       value: TopDownStupidEnnemi
-      objectReference: {fileID: 0}
-    - target: {fileID: 1941034001078187042, guid: 38d49281dcc70304eb15351b58e50531, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5993874565219236664, guid: 38d49281dcc70304eb15351b58e50531, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3789,10 +3684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5993874565219236664, guid: 38d49281dcc70304eb15351b58e50531, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 283744401}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38d49281dcc70304eb15351b58e50531, type: 3}
 --- !u!1660057539 &9223372036854775807
