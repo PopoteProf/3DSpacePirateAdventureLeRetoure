@@ -5681,9 +5681,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1288419543859856673}
     - target: {fileID: 7873220034625506950, guid: 45f452c0ec17eb941aeb990b3e86c5ca, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 78c09820b0d2ace40affb307b2fca4cf, type: 3}
+    - target: {fileID: 7873220034625506950, guid: 45f452c0ec17eb941aeb990b3e86c5ca, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: a961def2b06f1284aa504f64c951b733, type: 2}
+      objectReference: {fileID: 9100000, guid: eb2b2a98ade30f14eb006e8984c9f40d, type: 2}
     - target: {fileID: 8723000342510950073, guid: 45f452c0ec17eb941aeb990b3e86c5ca, type: 3}
       propertyPath: m_Enabled
       value: 0
