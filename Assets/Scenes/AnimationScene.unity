@@ -6422,7 +6422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b0234930ba1ccd041b0722f419f8f305, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1084884740351611579, guid: b0234930ba1ccd041b0722f419f8f305, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6670,7 +6670,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1396227574}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 68034e638d5af72488903005d9fae1b1, type: 3}
   m_Controller: {fileID: 9100000, guid: 55d62241398cc4f40bd875db7a0b6db4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -6933,6 +6933,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThirdPersonContrller
       objectReference: {fileID: 0}
+    - target: {fileID: 933486076121948186, guid: 7b3d59035b6fd1348915d49ba749f3e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4477473253713010664, guid: 7b3d59035b6fd1348915d49ba749f3e2, type: 3}
       propertyPath: _animator
       value: 
@@ -7176,7 +7180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6773369640808538286, guid: 7cc7983df55bc6b4a9f6487b248af86b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7827599428213292054, guid: 7cc7983df55bc6b4a9f6487b248af86b, type: 3}
       propertyPath: m_Enabled

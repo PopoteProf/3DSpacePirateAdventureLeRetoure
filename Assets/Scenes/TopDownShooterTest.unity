@@ -1287,6 +1287,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5.3710694
       objectReference: {fileID: 0}
+    - target: {fileID: 1086119308968384044, guid: f4a95d6be34b2c74d81de1547ea492a6, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 592aa77936f04394e89892cba81e905f, type: 3}
+    - target: {fileID: 1086119308968384044, guid: f4a95d6be34b2c74d81de1547ea492a6, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1140191156585240652, guid: f4a95d6be34b2c74d81de1547ea492a6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.01564
@@ -4348,6 +4356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TopDownStupidEnnemi
       objectReference: {fileID: 0}
+    - target: {fileID: 3179350851430750233, guid: 38d49281dcc70304eb15351b58e50531, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 284de542539655e4ca2ef9cf40d8f04d, type: 2}
     - target: {fileID: 5993874565219236664, guid: 38d49281dcc70304eb15351b58e50531, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
