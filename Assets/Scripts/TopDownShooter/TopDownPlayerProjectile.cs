@@ -47,7 +47,7 @@ public class TopDownPlayerProjectile : MonoBehaviour {
                         }
                         if (hit.collider.GetComponent<TopDownStupidMonsters>() != null)
                         {
-                            hit.collider.GetComponent<TopDownStupidMonsters>().SetDeath();
+                            hit.collider.GetComponent<TopDownStupidMonsters>().TakeHit();
                             GameObject ps = Instantiate(_prefabsPsBlood, hit.point, Quaternion.identity);
                             ps.transform.forward = hit.normal;
                             Destroy(gameObject);
