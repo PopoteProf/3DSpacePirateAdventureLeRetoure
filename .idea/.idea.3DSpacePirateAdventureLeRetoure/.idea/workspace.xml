@@ -2,44 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f083087-67d9-4fc1-aff1-a52f3969dfbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ThirdPersonRootMotionController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ThirdPersonRootMotionController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/EnnemiAttackAnimation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/EnnemiAttackAnimation.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownCharacterControllerStupidMonster.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownCharacterControllerStupidMonster.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownRootMotionStupidMonster.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownRootMotionStupidMonster.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/IDamagable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/IDamagable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSDetectionZone.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSDetectionZone.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSIldeTarget.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSIldeTarget.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSMovingTarget.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSMovingTarget.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSTurret.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSTurret.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSUnite.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSUnite.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DSpacePirateAdventureLeRetoure/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DSpacePirateAdventureLeRetoure/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/idle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/idle.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/left strafe walk.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/left strafe walk.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/left strafe.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/left strafe.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/left turn (2).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/left turn (2).fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/right strafe walk.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/right strafe walk.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/right strafe.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/right strafe.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/right turn (2).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/right turn (2).fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/running.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/running.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/walking.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/FemaleLocomotionPack/walking.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Rifle8/idle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Rifle8/idle.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Rifle8/walk backward left.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Rifle8/walk backward left.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Zombie/zombie idle (2).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Zombie/zombie idle (2).fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Zombie/zombie punching (2).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Zombie/zombie punching (2).fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Zombie/zombie running.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Zombie/zombie running.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TopDown/PlayerTopDownShooter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TopDown/PlayerTopDownShooter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TopDown/TopDownStupidEnnemi.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TopDown/TopDownStupidEnnemi.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RawImport/EveAnim/Eve By J.Gonzales.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RawImport/EveAnim/Eve By J.Gonzales.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RawImport/MixamoMultiAnim.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RawImport/MixamoMultiAnim.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RawImport/XBot/Idle(1).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RawImport/XBot/Idle(1).fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RawImport/XBot/X Bot@Walking.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RawImport/XBot/X Bot@Walking.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AnimationScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AnimationScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR@Jump.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR@Jump.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR@Zombie Dying.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR@Zombie Dying.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR@Zombie Reaction Hit.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR@Zombie Reaction Hit.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR@Zombie Run.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR@Zombie Run.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/ZombiTorso.mask.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/ZombiTorso.mask.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/zombie idle (2).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/zombie idle (2).fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/zombie punching (2).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/zombie punching (2).fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/zombie running.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/zombie running.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/PSBloodSplash.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/PSBloodSplash.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/PSIlmpact1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/PSIlmpact1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/PSWeel 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/PSWeel 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/PSWeel.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/PSWeel.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TopDownShooterTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TopDownShooterTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimHit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimLayerWeightOverride.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimHit.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimLayerWeightOverride.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ThirdPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ThirdPersonController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownPlayerProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownPlayerProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownShooterControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownShooterControler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownStupidMonsters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownStupidMonsters.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +45,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2798D1CD-ABDA-4496-878D-72B0C88E6E94/8f/30068bf4/StateMachineBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ExplosionScene/ExplosionSceneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownStupidEnnemiSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownStupidMonsters.cs" root0="FORCE_HIGHLIGHTING" />
@@ -75,6 +80,15 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/AnimHit.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ThirdPersonRootMotionController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AnimLayerWeightOverride.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/IDamagable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSIldeTagert.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSDetectionZone.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSTurret.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSIldeTarget.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSMovingTarget.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSCameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSUnite.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2rcvptJC6MFEVCUnVeSkomtcVxf" />
@@ -130,6 +144,10 @@
       <workItem from="1738487883043" duration="8576000" />
       <workItem from="1738659245224" duration="5702000" />
       <workItem from="1738697746880" duration="10016000" />
+      <workItem from="1739271029322" duration="2837000" />
+      <workItem from="1739348318768" duration="15757000" />
+      <workItem from="1739376190979" duration="5327000" />
+      <workItem from="1739441052317" duration="1860000" />
     </task>
     <servers />
   </component>
