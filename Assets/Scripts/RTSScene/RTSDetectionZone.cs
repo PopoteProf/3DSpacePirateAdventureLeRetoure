@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class RTSDetectionZone : MonoBehaviour
 {
+    [SerializeField] private bool _displayDebug;
     [SerializeField] private SphereCollider _sphereCollider;
     [SerializeField] private float Range = 5;
     [SerializeField] private IDamagable.Alignment _tragetAlingnment = IDamagable.Alignment.Ally;   
@@ -58,7 +59,9 @@ public class RTSDetectionZone : MonoBehaviour
         if (damagable.GetAlignment() != _tragetAlingnment) return false;
         return true;
     }
-    private void OnDrawGizmos() {
+    private void OnDrawGizmos()
+    {
+        if (!_displayDebug) return;
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position , Range);
     }

@@ -38,6 +38,8 @@ public class RTSCameraController : MonoBehaviour
             moveVector.z = -(1-Input.mousePosition.y/ _VerticalBorderd);
         }
 
+        moveVector.x += Input.GetAxis("Horizontal");
+        moveVector.z += Input.GetAxis("Vertical");
         if (Input.mousePosition.y > (Screen.height - _VerticalBorderd)) {
             moveVector.z = (Input.mousePosition.y - (Screen.height - _VerticalBorderd)) / _VerticalBorderd;
         }

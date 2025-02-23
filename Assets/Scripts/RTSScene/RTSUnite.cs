@@ -1,15 +1,16 @@
-using System;
+using System.Diagnostics;
 using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.ProBuilder.MeshOperations;
 
 [SelectionBase]
-public class RTSUnite : MonoBehaviour , IDamagable {
-    [SerializeField] private NavMeshAgent _navMeshAgent;
+public class RTSUnite : MonoBehaviour , IDamagable, IRtsSelectable {
+    [SerializeField] protected NavMeshAgent _navMeshAgent;
     [SerializeField] private Transform _selecterElement;
     [SerializeField] private Animator _animator;
-    [Space(10)]
+    [Space(10)] 
+    [SerializeField] protected RTSUnitStat _rtsUnitStat;
     [SerializeField] private IDamagable.Alignment _alignment = IDamagable.Alignment.Ally;
     [SerializeField] private int _maxHP=10;
     [SerializeField] private int _currentHP;
@@ -25,28 +26,39 @@ public class RTSUnite : MonoBehaviour , IDamagable {
     [SerializeField] private float _attackDelay=0.5f;
     [SerializeField] private int _attackDamage = 2;
     [SerializeField] private float _attackRange = 2;
+
+    public enum RTSUnitStat {
+        Idles,Attack,Dead,Moving,GoToRessource,GoToDepot,Mining  
+    }
     
     private bool _isSelected;
-    private bool _isDead;
+    protected bool _isDead;
     private float _attackTimer;
     private bool _hadDealDamage;
-    private bool _isAttacking;
+    protected bool _isAttacking;
     [SerializeField] private IDamagable _currentTarget;
     
     public bool IsDead() => _isDead;
     public IDamagable.Alignment GetAlignment() => _alignment;
     public Vector3 GetCurrentPosition() => transform.position;
+    public bool CanBeSelected() => _alignment == IDamagable.Alignment.Ally;
 
-    public void SetSelected(bool value) {
+    public void SetSelected(bool value)
+    {
+
+        if (gameObject == null) return;
         _selecterElement.gameObject.SetActive(value);
         _isSelected = value;
     }
 
-    public void SetDestination(Vector3 value) {
+    public virtual void SetDestination(Vector3 value) {
+        if (_isDead) return;
         _navMeshAgent.SetDestination(value);
     }
 
-    public void SetAttackTarget(IDamagable target) {
+    public virtual void SetAttackTarget(IDamagable target)
+    {
+        if (_isDead) return;
         _currentTarget = target;
     }
 
@@ -59,19 +71,11 @@ public class RTSUnite : MonoBehaviour , IDamagable {
             _attackDelay = 1 / _attackRate;
         }
     }
-    private void Update() {
+    protected virtual void Update() {
         if (_isDead) return;
 
         if (_currentTarget != null&& !_currentTarget.IsDead()) {
-            if (IsTargetInRange()) {
-                _navMeshAgent.SetDestination(transform.position);
-                if( _isAttacking)ManageAttack(true);
-                else StartAttack();
-            }
-            else {
-                SetDestination(_currentTarget.GetCurrentPosition());
-                ManageAttack(false);
-            }
+           ManageAttackStat();
         }
         else {
             ManageAttack(false);
@@ -79,6 +83,18 @@ public class RTSUnite : MonoBehaviour , IDamagable {
 
         if (_animator!=null) {
             _animator.SetFloat("Speed", _navMeshAgent.velocity.magnitude);
+        }
+    }
+
+    protected void ManageAttackStat() {
+        if (IsTargetInRange()) {
+            _navMeshAgent.SetDestination(transform.position);
+            if( _isAttacking)ManageAttack(true);
+            else StartAttack();
+        }
+        else {
+            SetDestination(_currentTarget.GetCurrentPosition());
+            ManageAttack(false);
         }
     }
 
@@ -98,6 +114,8 @@ public class RTSUnite : MonoBehaviour , IDamagable {
 
     public void Die() {
         _isDead = true;
+        _navMeshAgent.enabled = false;
+        GetComponent<Collider>().enabled = false;
         if (_animator) _animator.SetTrigger("Dead");
         if (_destroyOnDeath) Destroy(gameObject);
     }
@@ -118,8 +136,6 @@ public class RTSUnite : MonoBehaviour , IDamagable {
     private void ManageAttack(bool isInRange) {
         if (_isAttacking) {
             _attackTimer += Time.deltaTime;
-            
-            
             if (_attackTimer >= _attackDelay&& !_hadDealDamage) {
                 _hadDealDamage = true;
                 if (isInRange) {
@@ -132,7 +148,6 @@ public class RTSUnite : MonoBehaviour , IDamagable {
                     }
                 }
             }
-
             if (_attackTimer >= 1 / _attackRate) {
                _attackTimer = 0;
                _hadDealDamage = false;

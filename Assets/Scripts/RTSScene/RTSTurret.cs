@@ -9,8 +9,9 @@ public class RTSTurret : RTSIldeTarget
     [SerializeField] private int _damage = 2;
     [SerializeField] private LineRenderer _fireLineRender;
     [SerializeField] private Transform _firePoint;
+    [SerializeField] private Transform _turretHead;
 
-    private IDamagable _currentTarget;
+     private IDamagable _currentTarget;
 
     private float _attackTimer;
     private Vector3 _targetLastPos;
@@ -46,7 +47,7 @@ public class RTSTurret : RTSIldeTarget
         
         Vector3 dir = _targetLastPos - transform.position;
         dir.y = 0;
-        transform.forward = dir;
+        _turretHead.forward = dir;
 
         _attackTimer -= Time.deltaTime;
         SetFireLineRenderer(_attackTimer > (1/_fireRate)-_fireRayLifeTime);

@@ -2,40 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f083087-67d9-4fc1-aff1-a52f3969dfbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/IDamagable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/IDamagable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSDetectionZone.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSDetectionZone.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSIldeTarget.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSIldeTarget.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSMovingTarget.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSMovingTarget.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSTurret.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSTurret.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSUnite.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSUnite.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/IRtsRessourceDepos.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/IRtsRessourceDepos.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/IRtsSelectable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/IRtsSelectable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSBuilding.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSBuilding.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSBuildingCommendCenter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSBuildingCommendCenter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSBuildingController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSBuildingController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSBuildingFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSBuildingFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSBuildingGhost.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSBuildingGhost.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSBuildingGrinder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSBuildingGrinder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSHUD.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSHUD.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSRessource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSRessource.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSUniteWorker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSUniteWorker.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/SORTSBuilding.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/SORTSBuilding.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DSpacePirateAdventureLeRetoure/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DSpacePirateAdventureLeRetoure/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR@Jump.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR@Jump.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/AC_RTSZombie.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/AC_RTSZombie.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR@Zombie Dying.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR@Zombie Dying.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR@Zombie Reaction Hit.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR@Zombie Reaction Hit.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR@Zombie Run.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/Ch25_nonPBR@Zombie Run.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/ZombiTorso.mask.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/ZombiTorso.mask.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/zombie idle (2).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/zombie idle (2).fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/zombie punching (2).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/zombie punching (2).fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/zombie running.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Animation/Zombie/zombie running.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/PSBloodSplash.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/PSBloodSplash.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/PSIlmpact1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/PSIlmpact1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/PSWeel 1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/PSWeel 1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/PSWeel.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/PSWeel.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TopDownShooterTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TopDownShooterTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/BasicWater.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/BasicWater.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RTS/PRF_RTSTurret.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/RTS/PRF_RTSTurret.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RTS/PRF_RTSUnite.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/RTS/PRF_RTSUnite.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTSScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTSScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTSScene/NavMesh-Terrain 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTSScene/NavMesh-Terrain 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTSScene/NavMesh-Terrain 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTSScene/NavMesh-Terrain 2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RTSScene/NavMesh-Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RTSScene/NavMesh-Terrain.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RTSScene/IDamagable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/IDamagable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSCameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSCameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSDetectionZone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSDetectionZone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSTurret.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSTurret.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSUnite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSUnite.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,10 +64,12 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ai.navigation/Editor/NavigationOverlay.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2798D1CD-ABDA-4496-878D-72B0C88E6E94/8f/30068bf4/StateMachineBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ExplosionScene/ExplosionSceneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownStupidEnnemiSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownStupidMonsters.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem/InputSystem/Events/InputEvent.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -80,15 +92,26 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/AnimHit.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ThirdPersonRootMotionController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AnimLayerWeightOverride.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/IDamagable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSIldeTagert.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSDetectionZone.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSTurret.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSIldeTarget.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSMovingTarget.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSCameraController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSUnite.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/IDamagable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/IRtsSelectable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/IRtsRessourceDepos.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSHUD.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSBuilding.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/SORTSBuilding.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSBuildingController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSBuildingGrinder.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSRessource.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSTurret.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSDetectionZone.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSBuildingCommendCenter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSBuildingFactory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSUnite.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSUniteWorker.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2rcvptJC6MFEVCUnVeSkomtcVxf" />
@@ -148,6 +171,11 @@
       <workItem from="1739348318768" duration="15757000" />
       <workItem from="1739376190979" duration="5327000" />
       <workItem from="1739441052317" duration="1860000" />
+      <workItem from="1739548377107" duration="1123000" />
+      <workItem from="1739883334130" duration="259000" />
+      <workItem from="1739888289518" duration="6821000" />
+      <workItem from="1739969634031" duration="11202000" />
+      <workItem from="1740036974432" duration="8642000" />
     </task>
     <servers />
   </component>
