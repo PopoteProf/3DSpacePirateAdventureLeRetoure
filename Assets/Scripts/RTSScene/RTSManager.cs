@@ -20,6 +20,7 @@ public class RTSManager : MonoBehaviour
     [SerializeField] private RTSBuildingController _prefabBuildingController;
     [SerializeField] private SORTSBuilding _sortsBuilding;
     [SerializeField] private SORTSBuilding _currentsortsBuilding;
+    [SerializeField] private int _defaultRessource = 0;
 
     private int _currenteRessouces = 0;
     
@@ -29,6 +30,11 @@ public class RTSManager : MonoBehaviour
 
     private void Awake() {
         Instance = this;
+    }
+
+    private void Start()
+    {
+        ChangeRessource(_defaultRessource);
     }
 
     void Update() {
