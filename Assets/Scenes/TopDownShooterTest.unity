@@ -2503,7 +2503,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a435dc9439b52ef4e81c395d7ea94f8f, type: 3}
+  m_Script: {fileID: 11500000, guid: a702333b00494724848758f00f56d69f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2019288895
@@ -3925,7 +3925,15 @@ Animator:
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+    'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform
+    'mixamorig:RightArm'\n\tTransform 'mixamorig:LeftLeg'\n\tTransform 'mixamorig:LeftHandMiddle3'\n\tTransform
+    'mixamorig:LeftShoulder'\n\tTransform 'mixamorig:RightHandRing1'\n\tand more
+    ...\n\tFrom animation clip 'WalkBackwardRight'\n\tFrom animation clip 'WalkForward'\n\tFrom
+    animation clip 'WalkForwardLeft'\n\tFrom animation clip 'WalkForwardRight'\n\tFrom
+    animation clip 'WalkRight'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
