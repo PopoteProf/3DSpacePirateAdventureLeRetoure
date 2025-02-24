@@ -7,13 +7,18 @@ public class TopDownShooterControler : MonoBehaviour
 
     public event EventHandler OnFire;
     
+    [SerializeField] private Animator _animator;
+    
     [SerializeReference] private CharacterController _characterController;
+    [Space(5), Header("Move")]
+    [SerializeField] private float _runSpeed = 6;
+    [SerializeField] private float _moveAcceleration = 2;
     [SerializeField] private float _moveSpeed = 1;
     [SerializeField] private float _gravity =-9.8f;
     [SerializeField] private Transform _groundChecker;
     [SerializeField] private float _groundCheckerRadius = 0.4f;
     [SerializeField] private LayerMask _groundMask;
-    [SerializeField] private Animator _animator;
+    
 
     [Space(5), Header("HP")]
     [SerializeField] private float _hpMax = 10;
@@ -28,9 +33,9 @@ public class TopDownShooterControler : MonoBehaviour
     [SerializeField] private Transform _firePoint;
     [SerializeField] private CinemachineImpulseSource _fireImpulseSource;
     [SerializeField] private TopDownShooterFireLight _fireLight;
-    
 
-    
+
+    private float _currentSpeed;
     private bool _isGrounded;
     private Vector3 _velocity;
     private Vector3 _aimVector;
@@ -59,6 +64,7 @@ public class TopDownShooterControler : MonoBehaviour
     {
         if (_currentTopDownConsole != null && Input.GetKeyDown(KeyCode.E)) {
             _currentTopDownConsole.Intract();
+            if(_animator)_animator.SetTrigger("Interact");
         }
     }
 
@@ -70,6 +76,7 @@ public class TopDownShooterControler : MonoBehaviour
             if(_fireImpulseSource)_fireImpulseSource.GenerateImpulse();
             OnFire?.Invoke(this , EventArgs.Empty);
             _fireLight.Fire();
+            if(_animator)_animator.SetTrigger("Fire");
         }
     }
 
@@ -93,8 +100,18 @@ public class TopDownShooterControler : MonoBehaviour
     }
 
     protected virtual void ManageMovement() {
+
+
+        if (Input.GetKey(KeyCode.LeftShift)) {
+            _currentSpeed += _moveAcceleration * Time.deltaTime;
+        }
+        else {
+            _currentSpeed -= _moveAcceleration * Time.deltaTime;
+        }
+
+        _currentSpeed = Mathf.Clamp(_currentSpeed, _moveSpeed, _runSpeed);
         Vector3 moveVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        _characterController.Move(moveVector.normalized * _moveSpeed * Time.deltaTime);
+        _characterController.Move(moveVector.normalized * _currentSpeed * Time.deltaTime);
         if (_isGrounded && _velocity.y < 0) {
             _velocity.y = -2f;
         }
@@ -106,6 +123,7 @@ public class TopDownShooterControler : MonoBehaviour
 
         //Debug.Log( angle);
         Vector3 displayVec = RotateXZ(moveVector, -angle);
+        displayVec = displayVec * _currentSpeed;
         if(_animator)_animator.SetFloat("X", displayVec.x);
         if(_animator)_animator.SetFloat("Z", displayVec.z);
 
@@ -122,9 +140,13 @@ public class TopDownShooterControler : MonoBehaviour
         return new Vector3(x, 0, z);
     }
 
-    public void SetConsole(TopDownConsole console, bool _set=true) {
-        if (_set = false && _currentTopDownConsole != console) return;
+    public void SetConsole(TopDownConsole console, bool set=true) {
+        if (set = false && _currentTopDownConsole != console) return;
         if( _currentTopDownConsole!=null) _currentTopDownConsole.ExitConsole();
         _currentTopDownConsole = console;
+    }
+
+    public void TakeDamage() {
+        if(_animator)_animator.SetTrigger("Hit");
     }
 }
