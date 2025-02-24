@@ -3723,10 +3723,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4596616195958561185, guid: bb689aebe118cd64884e3078a1e4c62c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596616195958561185, guid: bb689aebe118cd64884e3078a1e4c62c, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596616195958561185, guid: bb689aebe118cd64884e3078a1e4c62c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a18d65c13e791da4e9c6f04f3d57bbfe, type: 2}
+    - target: {fileID: 4596616195958561185, guid: bb689aebe118cd64884e3078a1e4c62c, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4920241960098046182, guid: bb689aebe118cd64884e3078a1e4c62c, type: 3}
       propertyPath: _player
       value: 
       objectReference: {fileID: 196056514}
+    - target: {fileID: 7508797254941373581, guid: bb689aebe118cd64884e3078a1e4c62c, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 7911370120032125998, guid: bb689aebe118cd64884e3078a1e4c62c, type: 3}
       propertyPath: m_Name
       value: TopDownStupidEnnemi (1)
