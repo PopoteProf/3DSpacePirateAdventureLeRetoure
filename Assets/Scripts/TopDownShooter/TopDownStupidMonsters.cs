@@ -1,6 +1,3 @@
-using System;
-using TMPro;
-using UnityEditorInternal;
 using UnityEngine;
 
 

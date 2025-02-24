@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.Rendering;
+﻿using UnityEngine;
 
 public class TopDownPlayerProjectile : MonoBehaviour {
     [SerializeField] public bool _isFlying = true;
