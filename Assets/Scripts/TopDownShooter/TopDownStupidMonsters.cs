@@ -1,12 +1,8 @@
-using System;
-using TMPro;
-using UnityEditorInternal;
 using UnityEngine;
 
 
 public class TopDownStupidMonsters : MonoBehaviour
 {
-
     [SerializeField] protected Animator _animator;
     [Space(10)]
     [SerializeField] protected float _aggroDistance = 15;
