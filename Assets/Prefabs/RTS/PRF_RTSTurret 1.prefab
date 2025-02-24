@@ -185,7 +185,6 @@ GameObject:
   - component: {fileID: 3556921350563897950}
   - component: {fileID: 4360077983171190197}
   - component: {fileID: 7434122020167081983}
-  - component: {fileID: 6343071796906829489}
   m_Layer: 0
   m_Name: PRF_RTSTurret 1
   m_TagString: Untagged
@@ -267,22 +266,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 2.1410246
   m_Center: {x: 0, y: 0.28, z: 0}
---- !u!208 &6343071796906829489
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2907282996345384749}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 0
-  m_Extents: {x: 2.17, y: 1, z: 2.17}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1 &3013703521484362910
 GameObject:
   m_ObjectHideFlags: 0

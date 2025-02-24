@@ -970,7 +970,6 @@ GameObject:
   - component: {fileID: 6368483528877993642}
   - component: {fileID: 4032794610688879614}
   - component: {fileID: 4411972238359271379}
-  - component: {fileID: 566035404953754285}
   - component: {fileID: 4904287943803397179}
   m_Layer: 0
   m_Name: PRF_RTSCommandCenter
@@ -1110,22 +1109,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.4967403, y: 2.6180477, z: 8.915025}
   m_Center: {x: 0.13175488, y: 1.305768, z: 0.15710878}
---- !u!208 &566035404953754285
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6536621833590255458}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 2.265, y: 2.818, z: 4.458}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 0
-  m_Center: {x: -0.46, y: 2.8140001, z: 0.157}
-  m_TimeToStationary: 0.5
 --- !u!114 &4904287943803397179
 MonoBehaviour:
   m_ObjectHideFlags: 0
