@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31c9ae8eb054f398ab18f2b632dd40a, type: 3}
+  m_Name: SO_RTSFactory
+  m_EditorClassIdentifier: 
+  PrefabsGhost: {fileID: 2937764947792428882, guid: 98989897af5652d4f8b52467e2d5a8cd, type: 3}
+  Size: {x: 5, y: 2, z: 4.5}
+  PrefabBuild: {fileID: 5168917505374771745, guid: cbf8c746b910b2f449c773d72e8ea770, type: 3}
+  Price: 100
