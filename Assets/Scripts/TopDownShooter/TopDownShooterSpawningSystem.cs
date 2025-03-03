@@ -2,7 +2,7 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class SpawningSystem : MonoBehaviour
+public class TopDownShooterSpawningSystem : MonoBehaviour
 {
 
     public bool DoSpawn;
@@ -16,6 +16,9 @@ public class SpawningSystem : MonoBehaviour
     private float _timer;
     private Color col = new Color(1, 0.2f, 1,0.5f);
 
+    public void StartSpawning() => DoSpawn = true;
+    public void StopSpawning() => DoSpawn = false;
+    
     private void Update() {
         if (!DoSpawn) return;
         _timer += Time.deltaTime;
