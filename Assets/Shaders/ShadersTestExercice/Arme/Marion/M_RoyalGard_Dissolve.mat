@@ -25,7 +25,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Albedo:
-        m_Texture: {fileID: 2800000, guid: b6e562950f65cab45b0f4df01ee98bb1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 978d277c9bfd97c4d981490706440669, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -57,7 +57,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Metallic:
-        m_Texture: {fileID: 2800000, guid: 214a65134bc2bf34493d3e6cc94ccac1, type: 3}
+        m_Texture: {fileID: 2800000, guid: aab6a7260ecd5884893b80a4ddd80683, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -65,7 +65,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: 989ffce065fc3fa49b0d86a8ec371ab7, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2dc607d520fb72241b36ebbd44667b5c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -108,9 +108,9 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DissolveProgress: 1
-    - _DissolveSize: 91.25
-    - _DissolveWidth: -0.128
+    - _DissolveProgress: 0.005
+    - _DissolveSize: 10.09
+    - _DissolveWidth: -0.054
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
