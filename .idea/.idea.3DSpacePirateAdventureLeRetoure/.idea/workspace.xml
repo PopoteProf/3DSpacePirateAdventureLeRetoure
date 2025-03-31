@@ -3,14 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="7f083087-67d9-4fc1-aff1-a52f3969dfbd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DSpacePirateAdventureLeRetoure/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DSpacePirateAdventureLeRetoure/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RTS_Scifi_game_assets/Models/Structures/Structure_v2/Source/Structure_v2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RTS_Scifi_game_assets/Models/Structures/Structure_v2/Source/Structure_v2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RawImport/EveAnim/Jump.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RawImport/EveAnim/Jump.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TopDown/PlayerTopDownShooter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TopDown/PlayerTopDownShooter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Rifle Aiming Idle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Rifle Aiming Idle.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Walk Backward.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Walk Backward.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Walk Left.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Walk Left.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Walk Right.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Walk Right.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Walk With Rifle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Walk With Rifle.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TopDownShooter.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TopDownShooter.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/EnergieBridge.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/EnergieBridge.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownMonster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownMonster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/DemoSG/New Shader Graph.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/DemoSG/New Shader Graph.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/DemoSG/Shader Graphs_New Shader Graph.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/DemoSG/Shader Graphs_New Shader Graph.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Water1.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Water1.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +37,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2798D1CD-ABDA-4496-878D-72B0C88E6E94/8f/30068bf4/StateMachineBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5A41D6B7-1898-42EC-A409-FD0B1C3E3DCF/42/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ExplosionScene/ExplosionSceneManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.splines/Runtime/SplineAnimate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownStupidEnnemiSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownStupidMonsters.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem/InputSystem/Events/InputEvent.cs" root0="SKIP_HIGHLIGHTING" />
@@ -80,8 +85,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/RTSScene/RTSUniteWorker.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/SpawningSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownShooterSpawningSystem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownMonster.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ShaderPropertyTester.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownMonster.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2rcvptJC6MFEVCUnVeSkomtcVxf" />
@@ -150,6 +155,9 @@
       <workItem from="1740750411424" duration="2752000" />
       <workItem from="1741870756451" duration="2997000" />
       <workItem from="1742166157247" duration="1074000" />
+      <workItem from="1742480801684" duration="596000" />
+      <workItem from="1742566010366" duration="2086000" />
+      <workItem from="1742631545316" duration="382000" />
     </task>
     <servers />
   </component>
