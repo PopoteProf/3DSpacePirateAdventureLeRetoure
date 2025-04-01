@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.AI;
@@ -26,6 +27,9 @@ public class TopDownMonster : MonoBehaviour
     [SerializeField] private float _delayToDestroy = 20;
     
     [SerializeField] private Rigidbody[] _ragdolRigidbody;
+    [SerializeField] private Renderer _renderer;
+    [SerializeField] private AnimationCurve _dissolveCurve= AnimationCurve.EaseInOut(0,1,1,0);
+    [SerializeField] private string _dissolvePropertyName ;
 
     private Collider _collider;
     private NavMeshAgent _navMeshAgent;
@@ -67,7 +71,12 @@ public class TopDownMonster : MonoBehaviour
 
     private void Update()
     {
-        if (_isDead||_IsPause) return;
+
+        if (_IsPause) return;
+        if (_isDead) {
+            ManagerIsDead();
+            return;
+        }
         if (_navMeshAgent.isOnOffMeshLink)
         {
             if (!_doLinkSetup && !_doLink) StartLink(_navMeshAgent.currentOffMeshLinkData);
@@ -78,6 +87,7 @@ public class TopDownMonster : MonoBehaviour
             ManageMovement();
         }
         ManageAttack();
+        
     }
 
     public void ManageAttack() {
@@ -99,6 +109,13 @@ public class TopDownMonster : MonoBehaviour
         GameStaticManager.SetPlayerTakeDamageHpChange(_attackDamage);
     }
 
+    private void ManagerIsDead() {
+        _timer += Time.deltaTime;
+        foreach (var material in _renderer.materials) {
+            material.SetFloat(_dissolvePropertyName, _dissolveCurve.Evaluate(_timer/_delayToDestroy));
+        }
+    }
+
     public void TakeHit(Vector3 pointHit, Vector3 hitVector) {
         _monsterHP--;
         if (_monsterHP <= 0) {
@@ -106,6 +123,7 @@ public class TopDownMonster : MonoBehaviour
             _navMeshAgent.enabled = false;
             _animator.enabled = false;
             _isDead = true;
+            _timer = 0;
             
             Invoke("SetRagdollToIsKinematic", _delayToRagdollIsKinematic);
             Destroy(gameObject ,_delayToDestroy);
@@ -176,6 +194,7 @@ public class TopDownMonster : MonoBehaviour
     }
 
     private void DoLink(OffMeshLinkData data) {
+        Debug.Log("Do Link ");
         _timer += Time.deltaTime;
         float yMod;
         float t = _timer / _linkSpeed;
@@ -189,6 +208,7 @@ public class TopDownMonster : MonoBehaviour
         _navMeshAgent.nextPosition = transform.position;
         if (_timer >= _linkSpeed)
         {
+            Debug.Log("Link Finish");
             _navMeshAgent.nextPosition = data.endPos;
             transform.position = data.endPos;
             _animator.SetBool("Jump", false);
@@ -201,6 +221,7 @@ public class TopDownMonster : MonoBehaviour
     }
 
     private void StartLink(OffMeshLinkData data) {
+        Debug.Log("StartLink");
         _linkSpeed = Vector3.Distance(data.startPos, data.endPos) / _jumpSpeed;
         _timer = 0;
         _doLinkSetup = true;
@@ -211,6 +232,7 @@ public class TopDownMonster : MonoBehaviour
     }
 
     private void DoLinkSetUp(OffMeshLinkData data) {
+        Debug.Log("Do Link setting");
         Vector3 linkdir = data.endPos - data.startPos;
         linkdir.y = 0;
         linkdir.Normalize();
