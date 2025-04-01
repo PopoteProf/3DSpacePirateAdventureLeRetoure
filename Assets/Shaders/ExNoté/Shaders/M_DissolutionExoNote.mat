@@ -7,14 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: YellowEmissiv
-  m_Shader: {fileID: -6465566751694194690, guid: 9dce0bf8e7bae8a428c6c1ec8bf6155c, type: 3}
-  m_Parent: {fileID: 2100000, guid: efbf111592b613a41ba33b0f68c80c16, type: 2}
+  m_Name: M_DissolutionExoNote
+  m_Shader: {fileID: -6465566751694194690, guid: 34dd7a1d88dc9f946bae5c4194881fbd, type: 3}
+  m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords:
-  - _EMISSION
-  m_LightmapFlags: 4
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -24,18 +23,27 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _NoiseScale: -0.49
-    m_Colors:
-    - _FlowSpeed: {r: -0.06, g: 0.01, b: 0, a: 0}
-    - _FlowSpeed2: {r: 0.18, g: 0.01, b: 0, a: 0}
-    - _WalerColor2: {r: 0.98039216, g: 0.5662607, b: 0.0705882, a: 0}
-    - _WaterColor: {r: 0.764151, g: 0.154272, b: 0.082903184, a: 0}
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &6242557189283902762
+--- !u!114 &5306409983808628091
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

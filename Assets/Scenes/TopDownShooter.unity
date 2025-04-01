@@ -3157,7 +3157,7 @@ MonoBehaviour:
   _cableMesh: {fileID: 1143189427}
   _bridgeMesh: {fileID: 1053854893}
   _virtualCamera: {fileID: 1228502568}
-  _animator: {fileID: 9007759888831949643}
+  _animator: {fileID: 0}
   _fadeInTime: 4
 --- !u!4 &158164866
 Transform:
@@ -10347,7 +10347,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a91ce8e9b3e37ea47a71b38f5c9cfaf6, type: 2}
+  - {fileID: 2100000, guid: efbf111592b613a41ba33b0f68c80c16, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27569,7 +27569,7 @@ MonoBehaviour:
   _meshCableToRail: {fileID: 1530259843}
   _meshCableToDoor: {fileID: 702909460}
   _doorConsole: {fileID: 1348621526}
-  _animator: {fileID: 2018048784009631759}
+  _animator: {fileID: 0}
   _onComplet:
     m_PersistentCalls:
       m_Calls: []
@@ -48349,11 +48349,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aed80ecff7fc4584483fe87f93eee7da, type: 3}
---- !u!95 &2018048784009631759 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 450526582075796352, guid: aed80ecff7fc4584483fe87f93eee7da, type: 3}
-  m_PrefabInstance: {fileID: 2018048784009631758}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4699931245895801024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48832,11 +48827,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ac822cc11ba0a94f924850c7a417dd0, type: 3}
---- !u!95 &9007759888831949643 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 4391470738264143911, guid: 2ac822cc11ba0a94f924850c7a417dd0, type: 3}
-  m_PrefabInstance: {fileID: 9007759888831949642}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
