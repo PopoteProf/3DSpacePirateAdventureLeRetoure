@@ -757,7 +757,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ff4117259f72dee48ae855ed7059bda3, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 93ebae73a1af7644ca8ef63e1058e17b, type: 2}
+      objectReference: {fileID: 2100000, guid: 624dca31c46c9c24398055dc45e13ece, type: 2}
     - target: {fileID: 919132149155446097, guid: ff4117259f72dee48ae855ed7059bda3, type: 3}
       propertyPath: m_Name
       value: EgergieBridge
@@ -3157,7 +3157,7 @@ MonoBehaviour:
   _cableMesh: {fileID: 1143189427}
   _bridgeMesh: {fileID: 1053854893}
   _virtualCamera: {fileID: 1228502568}
-  _animator: {fileID: 9007759888831949643}
+  _animator: {fileID: 0}
   _fadeInTime: 4
 --- !u!4 &158164866
 Transform:
@@ -8379,8 +8379,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 383534852}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.03904661, y: -0.6706965, z: 0.0353966, w: 0.7398572}
-  m_LocalPosition: {x: 1.945549, y: 8.25, z: -5.18}
+  m_LocalRotation: {x: 0.50071806, y: -0.014778108, z: 0.008550157, w: 0.8654421}
+  m_LocalPosition: {x: 5.9521484, y: 8.681967, z: -4.3312564}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8423,7 +8423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SplineSettings:
     Spline: {fileID: 779313422}
-    Position: 0
+    Position: 0.11818167
     Units: 1
   SplineOffset: {x: 0, y: 0, z: 0}
   CameraRotation: 0
@@ -10347,7 +10347,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a91ce8e9b3e37ea47a71b38f5c9cfaf6, type: 2}
+  - {fileID: 2100000, guid: aa5a5d83a736b5c47bd52ef7f1b34987, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19310,7 +19310,7 @@ Transform:
   m_GameObject: {fileID: 863602354}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5257311, y: 0.0000000027280236, z: -0.0000000016860118, w: 0.85065085}
-  m_LocalPosition: {x: -38.61, y: 17.48, z: -1.8599999}
+  m_LocalPosition: {x: 91, y: 17.48, z: -4.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23198,7 +23198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033767518}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.024246864, y: -0.7831235, z: 0.030594703, w: 0.6206398}
+  m_LocalRotation: {x: 0.014118626, y: 0.98444575, z: -0.1476809, w: 0.09411522}
   m_LocalPosition: {x: 0.5339966, y: 4.42, z: -8.902}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -23248,7 +23248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SplineSettings:
     Spline: {fileID: 1075595143}
-    Position: -0.056654744
+    Position: -0.1
     Units: 1
   SplineOffset: {x: 0, y: 0, z: 0}
   CameraRotation: 0
@@ -35108,7 +35108,7 @@ Transform:
   m_GameObject: {fileID: 1542024027}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5850816, y: -0, z: -0, w: 0.8109745}
-  m_LocalPosition: {x: -59.863235, y: 1.6762214, z: 0.8956816}
+  m_LocalPosition: {x: 5.817894, y: 1.8422265, z: -0.4012688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35777,7 +35777,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2d646d696cac40142be12a153cc43814, type: 2}
+  - {fileID: 2100000, guid: 9078a446bdd43644fb8ef07acf20e454, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -40751,7 +40751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95485d5cbd70439bb64e1140b9a250d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 4699931245895801025}
+  _animator: {fileID: 0}
 --- !u!4 &1833135335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3418708187556559481, guid: a157851e6c66e1545ae48d5a470cdc64, type: 3}
@@ -46333,7 +46333,7 @@ Transform:
   m_GameObject: {fileID: 2052242589}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5257311, y: 0.0000000027280231, z: -0.0000000016860109, w: 0.85065085}
-  m_LocalPosition: {x: -38.61, y: 17.48, z: -1.8599999}
+  m_LocalPosition: {x: 91, y: 17.48, z: -4.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48411,11 +48411,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed2758bba32923543a496c73cb4800c3, type: 3}
---- !u!95 &4699931245895801025 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 4729933412521589217, guid: ed2758bba32923543a496c73cb4800c3, type: 3}
-  m_PrefabInstance: {fileID: 4699931245895801024}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6709059066302594341
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48579,7 +48574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1140191156585240652, guid: f4a95d6be34b2c74d81de1547ea492a6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.61
+      value: 91
       objectReference: {fileID: 0}
     - target: {fileID: 1140191156585240652, guid: f4a95d6be34b2c74d81de1547ea492a6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -48587,7 +48582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1140191156585240652, guid: f4a95d6be34b2c74d81de1547ea492a6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.14
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 1140191156585240652, guid: f4a95d6be34b2c74d81de1547ea492a6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -48832,11 +48827,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ac822cc11ba0a94f924850c7a417dd0, type: 3}
---- !u!95 &9007759888831949643 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 4391470738264143911, guid: 2ac822cc11ba0a94f924850c7a417dd0, type: 3}
-  m_PrefabInstance: {fileID: 9007759888831949642}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

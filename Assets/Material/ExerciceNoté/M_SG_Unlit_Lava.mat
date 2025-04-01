@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_SG_Lit_Water
-  m_Shader: {fileID: -6465566751694194690, guid: 783ec294a88a71745941076af2e7e58b, type: 3}
+  m_Name: M_SG_Unlit_Lava
+  m_Shader: {fileID: -6465566751694194690, guid: 1c9393dccff6e3445a21857031eda0aa, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -38,21 +38,18 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _GradiantSize1: 20
-    - _Metallic: 0.5
-    - _NormalStrenght: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smooththness: 1
-    - _VoronoiSize1: 50
+    - _VoronoiNoisePower1: 0.1
+    - _VoronoiNoiseSize1: 4.5
     m_Colors:
-    - _BaseColor: {r: 0.2039215, g: 0.75756526, b: 0.9254902, a: 0.7058824}
-    - _Emission: {r: 0, g: 0, b: 0, a: 0}
-    - _FlowSpeed1: {r: 0.2, g: 0.2, b: 0, a: 0}
-    - _FlowSpeed2: {r: -0.2, g: 0.1, b: 0, a: 0}
+    - _BaseColor: {r: 4.237095, g: 0.30235454, b: 0, a: 1}
+    - _GradientNoiseFlowSpeed1: {r: 0, g: -0.05, b: 0, a: 0}
+    - _SecondColor: {r: 0, g: 0, b: 0, a: 1}
+    - _VoronoiNoiseFlowSpeed1: {r: 0, g: 0.05, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &4496626967622777630
+--- !u!114 &267244449118756501
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
