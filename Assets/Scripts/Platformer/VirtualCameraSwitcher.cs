@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class VirtualCameraSwitcher : MonoBehaviour
 {
-    [SerializeField] private CinemachineVirtualCamera _camToActivate;
-    [SerializeField] private CinemachineVirtualCamera _camToDesable;
+    [SerializeField] private CinemachineCamera _camToActivate;
+    [SerializeField] private CinemachineCamera _camToDesable;
 
     private void OnTriggerEnter(Collider other) {
         if(other.CompareTag("Player")) {
