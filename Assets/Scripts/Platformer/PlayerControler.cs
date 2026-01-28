@@ -18,6 +18,7 @@ public class PlayerControler : MonoBehaviour
     [SerializeField] private Animator _animator;
 
     [Space(5), Header("AutoClimb")] 
+    [SerializeField] private bool _usAutoClimb = true;
     [SerializeField] private Transform _climbRayCaster;
     [SerializeField] private float _climRayDistance= 0.5f;
     [SerializeField] private float _climbDistance= 0.3f;
@@ -29,6 +30,21 @@ public class PlayerControler : MonoBehaviour
     [SerializeField] private float _highClimbThreshold = 1;
     [SerializeField] private AnimationCurve _highClimbYCurve  = AnimationCurve.EaseInOut(0,0,1,1);
     [SerializeField] private AnimationCurve _highClimbXZCurve  = AnimationCurve.EaseInOut(0,0,1,1);
+    [SerializeField] private bool _usHandPosition;
+    [SerializeField] private Transform _transformRightHand;
+    [SerializeField] private AnimationCurve _HandContactAniamtionCurve; 
+    [SerializeField] private Transform _transformRightFoot;
+    [SerializeField] private AnimationCurve _FootContactAniamtionCurve;  
+    [Space(5),Header("Auto Crouch Settings")]
+    [SerializeField] private bool _usAutoCrouch = true;
+    [SerializeField] private float _mintriggerCrouchHeitgh= 1f;
+    [SerializeField] private float _maxtriggerCrouchHeitgh= 2f;
+    [SerializeField] private float _defaultHeight= 1.7f;
+    [SerializeField] private Vector3 _defaultcCenter= new Vector3(0,-0.18f,0);
+    [SerializeField] private float _crouchHeight= 1.2f;
+    [SerializeField] private Vector3 _crouchCenter= new Vector3(0,-0.12f,0);
+    [SerializeField] private bool _displayAutoCrouchDebug;
+    
     [Space(5), Header("DialogueSettings")]
     [SerializeField] private float _dialogueSetupMoveSpeed = 2;
     [SerializeField] private AnimationCurve _dialogueSetupAnimationCurve  = AnimationCurve.EaseInOut(0,0,1,1);
@@ -42,6 +58,7 @@ public class PlayerControler : MonoBehaviour
     private bool _doDialogueSetUp;
     private float _dialogueSetupTime;
     private Vector3 _lookAtPos;
+    private Vector3 _climCorner;
 
     public event EventHandler OnJump;
     public event EventHandler OnCimb;
@@ -74,7 +91,9 @@ public class PlayerControler : MonoBehaviour
         }
         ManagerIsGrounded();
         ManageMovement();
-        ManageAutoClimbDetection();
+        if( _usAutoClimb) ManageAutoClimbDetection();
+        if (_usAutoCrouch) ManageAutoCrouch();
+        
         
     }
 
@@ -110,17 +129,22 @@ public class PlayerControler : MonoBehaviour
             Controller.Move(MoveSpeed * Time.deltaTime * _moveVector);
         }
 
-        if(_animator)_animator.SetFloat("Speed", Controller.velocity.magnitude);
+        if (_animator) _animator.SetFloat("Speed", Controller.velocity.magnitude);
         
-       if (Controller.velocity.magnitude > 0.2) {
+
+        if (Controller.velocity.magnitude > 0.2) {
            Vector3 forward = Controller.velocity;
            forward.y = 0;
            transform.forward = forward;
-       }
+        }
 
-       Controller.Move(_velocity * Time.deltaTime);
-        
-       if(_animator)_animator.SetBool("IsGrounded", _isGRounded);
+        Controller.Move(_velocity * Time.deltaTime);
+       if (_animator)
+       {
+           _animator.SetBool("IsGrounded", _isGRounded);
+           _animator.SetFloat("YSpeed", Controller.velocity.y);
+       }
+       
     }
 
     private void ManageAutoClimbDetection() {
@@ -145,6 +169,8 @@ public class PlayerControler : MonoBehaviour
 
                     if (hit2.point.y - transform.position.y > _highClimbThreshold) {
                         _doAutohighClimb = true;
+                        _climCorner = hit.point;
+                        _climCorner.y = hit2.point.y;
                         if(_animator)_animator.SetBool("DoHighClimb", true);
                         OnCimb?.Invoke(this , EventArgs.Empty);
                     }
@@ -180,8 +206,20 @@ public class PlayerControler : MonoBehaviour
     }
     private void ManageAutoHighClimb() {
         _autoclimbTimer += Time.deltaTime;
-        Vector3 pos =  Vector3.Lerp(_autoClimbStart, _autoClimbTarget, _highClimbXZCurve.Evaluate(_autoclimbTimer / _highClimbTime));
-        pos.y = Mathf.Lerp(_autoClimbStart.y, _autoClimbTarget.y, _highClimbYCurve.Evaluate(_autoclimbTimer / _highClimbTime));
+        float t = _autoclimbTimer / _highClimbTime;
+        Vector3 pos =  Vector3.Lerp(_autoClimbStart, _autoClimbTarget, _highClimbXZCurve.Evaluate(t));
+        pos.y = Mathf.Lerp(_autoClimbStart.y, _autoClimbTarget.y, _highClimbYCurve.Evaluate(t));
+
+        if (_usHandPosition) {
+            float handRoot = _animator.GetFloat("HandRoot");
+            Vector3 handOffset = transform.position - _transformRightHand.position;
+            Vector3 footOffset = transform.position - _transformRightFoot.position;
+            Vector3 offset = Vector3.Lerp(handOffset, footOffset,
+                _HandContactAniamtionCurve.Evaluate(t) / _FootContactAniamtionCurve.Evaluate(t));
+            Debug.DrawLine(transform.position, _climCorner, Color.green);
+           pos=Vector3.Lerp(pos, _climCorner + handOffset, handRoot);
+        }
+
         transform.position = pos;
         
         if (_autoclimbTimer >= _highClimbTime) {
@@ -200,6 +238,26 @@ public class PlayerControler : MonoBehaviour
         if (_autoclimbTimer >= _dialogueSetupTime) {
             if(_animator)_animator.SetFloat("Speed",0);
             _doDialogueSetUp = false;
+        }
+    }
+
+    private void ManageAutoCrouch() {
+        float croutAmout;
+        if (Physics.Raycast(new Ray(transform.position, transform.up), out RaycastHit hit, _maxtriggerCrouchHeitgh,
+                GroundMask)) {
+            croutAmout = 1-Mathf.Clamp01(hit.distance-_mintriggerCrouchHeitgh)/(_maxtriggerCrouchHeitgh-_mintriggerCrouchHeitgh);
+        }
+        else {
+            croutAmout = 0;
+        }
+
+        Controller.center = Vector3.Lerp(_defaultcCenter, _crouchCenter, croutAmout);
+        Controller.height = Mathf.Lerp(_defaultHeight, _crouchHeight, croutAmout);
+
+        if(_animator)_animator.SetFloat("CrouchAmout", croutAmout);
+        
+        if (_displayAutoCrouchDebug) {
+            Debug.DrawLine(transform.position,transform.position+new Vector3(0,Mathf.Lerp(_maxtriggerCrouchHeitgh, _mintriggerCrouchHeitgh, croutAmout)) , Color.red);
         }
     }
 

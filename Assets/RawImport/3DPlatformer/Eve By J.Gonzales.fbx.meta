@@ -1,9 +1,29 @@
 fileFormatVersion: 2
-guid: 78c09820b0d2ace40affb307b2fca4cf
+guid: 592aa77936f04394e89892cba81e905f
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SpacePirate_M
+    second: {fileID: 2100000, guid: 1d1dae960ac50964eba571e54f9795fd, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SpacePirate_diffuse
+    second: {fileID: 2800000, guid: c465cc96a1666b843add3694e66bcae7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SpacePirate_normal
+    second: {fileID: 2800000, guid: 35f62a6b98a2a9941baef6373afe6448, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SpacePirate_specular
+    second: {fileID: 2800000, guid: 67b0f4a8792c7664da6907a7e8b9e8dc, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -31,11 +51,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Idle
+      name: mixamo.com
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 250
+      lastFrame: 1
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
