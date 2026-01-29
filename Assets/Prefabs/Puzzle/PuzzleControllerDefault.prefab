@@ -886,6 +886,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 80c577975ac6e0c45bafa22f5c1f9b4e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6997481394794667053}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 80c577975ac6e0c45bafa22f5c1f9b4e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 10395228917434971}
   m_SourcePrefab: {fileID: 100100000, guid: 80c577975ac6e0c45bafa22f5c1f9b4e, type: 3}
 --- !u!1 &2334410917168171321 stripped
 GameObject:
@@ -902,7 +905,7 @@ Animator:
   m_GameObject: {fileID: 2334410917168171321}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: aaef8a7e9bd2e97459c839ed7056db74, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0d1c9436ff561c640ba063af69b489e9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -914,6 +917,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &10395228917434971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2334410917168171321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371826412cfa4fa46aa72bcf6ccf2799, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TopDownPuzzleFootStep
+  _aEFootStep:
+    _minPitch: 1
+    _maxPitch: 1
+    _volume: 1
+    _sounds: []
+  _leftFooTransform: {fileID: 0}
+  _rightFootTransform: {fileID: 0}
+  _prefabsFootSplash: {fileID: 5201448924813436200, guid: 805129b3bd294a54aa75c99e630c9f83, type: 3}
 --- !u!4 &3111616742655923075 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 80c577975ac6e0c45bafa22f5c1f9b4e, type: 3}
