@@ -6,18 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="7f083087-67d9-4fc1-aff1-a52f3969dfbd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DSpacePirateAdventureLeRetoure/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DSpacePirateAdventureLeRetoure/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TopDown/PlayerTopDownShooter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TopDown/PlayerTopDownShooter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Rifle Aiming Idle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Rifle Aiming Idle.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Walk Backward.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Walk Backward.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Walk Left.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Walk Left.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Walk Right.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Walk Right.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Walk With Rifle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RawImport/RiffleWalk/Walk With Rifle.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TopDownShooter.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TopDownShooter.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownMonster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TopDownShooter/TopDownMonster.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/DemoSG/New Shader Graph.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/DemoSG/New Shader Graph.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/DemoSG/Shader Graphs_New Shader Graph.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/DemoSG/Shader Graphs_New Shader Graph.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Water1.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Water1.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/AC_PuzzleBoys.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/AC_PuzzleBoys.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/AC_PuzzleControllerMultiAnim.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/AC_PuzzleControllerMultiAnim.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/AC_RingAnimation.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/AC_RingAnimation.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Puzzle/PuzzleControllerDefault.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Puzzle/PuzzleControllerDefault.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Puzzle/PuzzleControllerMultiAnim.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Puzzle/PuzzleControllerMultiAnim.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RawImport/MixamoMultiAnim.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RawImport/MixamoMultiAnim.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AnimationScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AnimationScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +100,8 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;AlexisV&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -115,30 +112,26 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.2.3f1-x86_64\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.2.3f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath E:\GitProjects\3DSpacePirateAdventureLeRetoure -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\GitProjects\3DSpacePirateAdventureLeRetoure" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.2.3f1-x86_64\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.2.3f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath E:\GitProjects\3DSpacePirateAdventureLeRetoure -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\GitProjects\3DSpacePirateAdventureLeRetoure" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
@@ -149,10 +142,9 @@
       <option name="selectedOptions">
         <list />
       </option>
-      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
@@ -163,10 +155,9 @@
       <option name="selectedOptions">
         <list />
       </option>
-      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Device" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
+    <configuration name="Attach to" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
       <method v="2" />
     </configuration>
   </component>
@@ -204,6 +195,8 @@
       <workItem from="1769435376087" duration="5336000" />
       <workItem from="1769503534217" duration="5552000" />
       <workItem from="1769590331638" duration="6918000" />
+      <workItem from="1770212720275" duration="38000" />
+      <workItem from="1770212816643" duration="22000" />
     </task>
     <servers />
   </component>
