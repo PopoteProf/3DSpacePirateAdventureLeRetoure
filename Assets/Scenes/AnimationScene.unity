@@ -6376,6 +6376,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6232903512012949932, guid: 416f02992cf87df41b0ab74daf5d8c6d, type: 3}
+      propertyPath: _emoteTime
+      value: 2.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232903512012949932, guid: 416f02992cf87df41b0ab74daf5d8c6d, type: 3}
+      propertyPath: _moveSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6773369640808538286, guid: 416f02992cf87df41b0ab74daf5d8c6d, type: 3}
       propertyPath: m_Name
       value: PuzzleControllerMultiAnim
