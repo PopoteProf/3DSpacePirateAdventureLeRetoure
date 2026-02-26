@@ -938,7 +938,8 @@ MonoBehaviour:
     _minPitch: 1
     _maxPitch: 1
     _volume: 0.815
-    _sounds: []
+    _sounds:
+    - {fileID: 8300000, guid: 9a30499e47789df48aa9bdb1ec7b0982, type: 3}
   _leftFooTransform: {fileID: 881727169981131353}
   _rightFootTransform: {fileID: 2654070327985164820}
   _prefabsFootSplash: {fileID: 5201448924813436200, guid: 805129b3bd294a54aa75c99e630c9f83, type: 3}
