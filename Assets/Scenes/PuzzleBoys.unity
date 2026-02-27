@@ -9709,13 +9709,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6232903512012949932, guid: 7cc7983df55bc6b4a9f6487b248af86b, type: 3}
-      propertyPath: _isControlled
-      value: 0
+      propertyPath: _emoteTime
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6232903512012949932, guid: 7cc7983df55bc6b4a9f6487b248af86b, type: 3}
-      propertyPath: _topDownPuzzle
-      value: 
-      objectReference: {fileID: 2011175747}
+      propertyPath: _isControlled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6232903512012949932, guid: 7cc7983df55bc6b4a9f6487b248af86b, type: 3}
       propertyPath: topDownPuzzleController
       value: 
@@ -9723,22 +9723,6 @@ PrefabInstance:
     - target: {fileID: 6773369640808538286, guid: 7cc7983df55bc6b4a9f6487b248af86b, type: 3}
       propertyPath: m_Name
       value: P1 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6997481394794667053, guid: 7cc7983df55bc6b4a9f6487b248af86b, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: e47f7cc4bf94d98458a6fab5bd235b1a, type: 2}
-    - target: {fileID: 8828588991370147466, guid: 7cc7983df55bc6b4a9f6487b248af86b, type: 3}
-      propertyPath: m_Color.b
-      value: 0.047002792
-      objectReference: {fileID: 0}
-    - target: {fileID: 8828588991370147466, guid: 7cc7983df55bc6b4a9f6487b248af86b, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8828588991370147466, guid: 7cc7983df55bc6b4a9f6487b248af86b, type: 3}
-      propertyPath: m_Color.r
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

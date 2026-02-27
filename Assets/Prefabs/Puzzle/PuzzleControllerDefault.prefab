@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6f22d81b59a268945b84cdbb2fef14c9, type: 3}
-  m_Color: {r: 0, g: 0.6497364, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.047002792, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da0d6ad4984d7b3469ebe07eabe2a585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isControlled: 1
+  _isControlled: 0
   _moveSpeed: 5
   _controlleDisplay: {fileID: 6333191231622409447}
   topDownPuzzleController: {fileID: 0}
