@@ -335,7 +335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d47e2e0fa8d3b7741bc2f9c52b2e254f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -385,7 +385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 832703880907782598, guid: 3249692f31391c54dadc57ad306e0591, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2024119273777853272, guid: 3249692f31391c54dadc57ad306e0591, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12123,7 +12123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4914005493959180083, guid: 8ee58eae064283e4f825da4973a8160d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5050493394011796968, guid: 8ee58eae064283e4f825da4973a8160d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12147,7 +12147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5742760792715875889, guid: 8ee58eae064283e4f825da4973a8160d, type: 3}
       propertyPath: _moveSpeed
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5742760792715875889, guid: 8ee58eae064283e4f825da4973a8160d, type: 3}
       propertyPath: topDownPuzzleController
@@ -18519,7 +18519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4914005493959180083, guid: 8ee58eae064283e4f825da4973a8160d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4915318186754710453, guid: 8ee58eae064283e4f825da4973a8160d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
