@@ -41,11 +41,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature.002|mixamo.com|Layer0
+      name: MixamoAnimEmote
       takeName: Armature.002|mixamo.com|Layer0
       internalID: -2854121758031957398
       firstFrame: 0
-      lastFrame: 84
+      lastFrame: 87
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -70,7 +70,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature.002|mixamo.com|Layer0 (1)
+      name: MixamoAnimWalk
       takeName: Armature.002|mixamo.com|Layer0
       internalID: -4712761018008011706
       firstFrame: 290
@@ -81,8 +81,8 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -99,19 +99,19 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature.002|mixamo.com|Layer0 (2)
+      name: MixamoAnimIdle
       takeName: Armature.002|mixamo.com|Layer0
       internalID: -168072472511974235
-      firstFrame: 0
-      lastFrame: 320
+      firstFrame: 85
+      lastFrame: 289
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
