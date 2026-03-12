@@ -431,7 +431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animator: {fileID: 0}
   _speed: 1.5
-  _runAcceleration: 2
+  _runAcceleration: 4
   _runSpeed: 4
   _cameraSpeed: 50
   _aimTarget: {fileID: 8145072363458164691}
@@ -440,7 +440,7 @@ MonoBehaviour:
   _groundCheckerRadius: 0.4
   _groundMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 128
   _minAimHeight: 0.75
   _maxAimHeight: 2
   _heightCameraSpeed: 2

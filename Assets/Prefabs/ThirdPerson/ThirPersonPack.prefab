@@ -488,13 +488,9 @@ PrefabInstance:
       value: ThirdPersonController
       objectReference: {fileID: 0}
     - target: {fileID: 4477473253713010664, guid: 7b3d59035b6fd1348915d49ba749f3e2, type: 3}
-      propertyPath: _runAcceleration
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4477473253713010664, guid: 7b3d59035b6fd1348915d49ba749f3e2, type: 3}
-      propertyPath: _groundMask.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 1514368347237587899}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3729076623011923826, guid: 7b3d59035b6fd1348915d49ba749f3e2, type: 3}
@@ -508,6 +504,11 @@ PrefabInstance:
       addedObject: {fileID: 1158675482217596182}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b3d59035b6fd1348915d49ba749f3e2, type: 3}
+--- !u!95 &1514368347237587899 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5863568912167739610, guid: 7b3d59035b6fd1348915d49ba749f3e2, type: 3}
+  m_PrefabInstance: {fileID: 4925681417686956897}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3842297319802227890 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8145072363458164691, guid: 7b3d59035b6fd1348915d49ba749f3e2, type: 3}
