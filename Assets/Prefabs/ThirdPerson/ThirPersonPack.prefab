@@ -495,7 +495,8 @@ PrefabInstance:
       propertyPath: _groundMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5863568912167739610, guid: 7b3d59035b6fd1348915d49ba749f3e2, type: 3}
     m_RemovedGameObjects:
     - {fileID: 3729076623011923826, guid: 7b3d59035b6fd1348915d49ba749f3e2, type: 3}
     - {fileID: 1094376834090681153, guid: 7b3d59035b6fd1348915d49ba749f3e2, type: 3}

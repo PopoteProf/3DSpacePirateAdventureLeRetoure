@@ -154,14 +154,14 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 592aa77936f04394e89892cba81e905f, type: 3}
       propertyPath: m_Avatar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9000000, guid: 592aa77936f04394e89892cba81e905f, type: 3}
     - target: {fileID: 5866666021909216657, guid: 592aa77936f04394e89892cba81e905f, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: b885741594b89f04698ec989241031d9, type: 2}
     - target: {fileID: 5866666021909216657, guid: 592aa77936f04394e89892cba81e905f, type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
