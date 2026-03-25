@@ -13487,6 +13487,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 2645289158821571823, guid: 81d960fe44e3f6b46bcda7b24988e254, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -23.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4709157732692937618, guid: 81d960fe44e3f6b46bcda7b24988e254, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -13533,7 +13537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7326308086656437384, guid: 81d960fe44e3f6b46bcda7b24988e254, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.8411
+      value: 14.8
       objectReference: {fileID: 0}
     - target: {fileID: 7326308086656437384, guid: 81d960fe44e3f6b46bcda7b24988e254, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19839,7 +19843,7 @@ Animator:
   m_GameObject: {fileID: 1533634026}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 592aa77936f04394e89892cba81e905f, type: 3}
-  m_Controller: {fileID: 9100000, guid: b7e37461d758cca4bb4e69f483e7865d, type: 2}
+  m_Controller: {fileID: 9100000, guid: c5579c7d7b2ea044ca2c66d67bef2165, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -27234,7 +27238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7084806592000300259, guid: 45f452c0ec17eb941aeb990b3e86c5ca, type: 3}
       propertyPath: _usAutoCrouch
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7084806592000300259, guid: 45f452c0ec17eb941aeb990b3e86c5ca, type: 3}
       propertyPath: _defaultHeight
@@ -27258,7 +27262,7 @@ PrefabInstance:
       objectReference: {fileID: 1283789572}
     - target: {fileID: 7084806592000300259, guid: 45f452c0ec17eb941aeb990b3e86c5ca, type: 3}
       propertyPath: _displayAutoCrouchDebug
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7084806592000300259, guid: 45f452c0ec17eb941aeb990b3e86c5ca, type: 3}
       propertyPath: _maxtriggerCrouchHeitgh
