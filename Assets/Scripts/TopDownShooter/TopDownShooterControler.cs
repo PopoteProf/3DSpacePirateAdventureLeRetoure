@@ -86,7 +86,7 @@ public class TopDownShooterControler : MonoBehaviour
         if (Physics.Raycast(ray, out hit)) {
             Vector3 aimPos;
             if (hit.transform.CompareTag("Monster")) {
-                aimPos = hit.transform.position;
+                aimPos = hit.transform.position+ new Vector3(0, _aimHeightDisplacment, 0);
             }
             else {
                 aimPos= hit.point + new Vector3(0, _aimHeightDisplacment, 0);
@@ -149,4 +149,6 @@ public class TopDownShooterControler : MonoBehaviour
     public void TakeDamage() {
         if(_animator)_animator.SetTrigger("Hit");
     }
+
+    
 }
