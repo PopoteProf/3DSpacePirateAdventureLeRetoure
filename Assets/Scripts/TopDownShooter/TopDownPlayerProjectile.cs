@@ -11,6 +11,8 @@ public class TopDownPlayerProjectile : MonoBehaviour {
     [SerializeField] private float _gravity = 9.8f;
     [SerializeField] private float _physicsImpacetPower =1;
     [SerializeField] private GameObject _prefabsPsBlood;
+    [SerializeField] private GameObject _prfPsMetal;
+    [SerializeField] private GameObject _prfPSStone;
     private Vector3 _lastPos;
     private float _yVelocity;
 
@@ -60,7 +62,16 @@ public class TopDownPlayerProjectile : MonoBehaviour {
                 foreach (var hit in hits)
                 {
                     if (hit.transform.CompareTag("Player")) continue;
-                    GameObject ps = Instantiate(_prefabImpact, hits[0].point, Quaternion.identity);
+                    GameObject ps;
+                    if (hit.transform.CompareTag("Ground"))
+                    {
+                        ps = Instantiate(_prfPSStone, hits[0].point, Quaternion.identity);
+                    }
+                    else
+                    {
+                         ps = Instantiate(_prfPsMetal,hits[0].point, Quaternion.identity);
+                    }
+                    //GameObject ps = Instantiate(_prefabImpact, hits[0].point, Quaternion.identity);
                     ps.transform.forward = hits[0].normal;
                     Destroy(gameObject);
                     _isFlying = false;

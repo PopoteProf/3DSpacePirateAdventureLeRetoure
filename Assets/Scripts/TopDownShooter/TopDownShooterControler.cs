@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Unity.Cinemachine;
 using UnityEngine;
 
@@ -33,6 +34,8 @@ public class TopDownShooterControler : MonoBehaviour
     [SerializeField] private Transform _firePoint;
     [SerializeField] private CinemachineImpulseSource _fireImpulseSource;
     [SerializeField] private TopDownShooterFireLight _fireLight;
+    [SerializeField] private ParticleSystem[] _fireParticuleSystems;
+    [SerializeField] private LineRenderer _aimLineRenderer;
 
 
     private float _currentSpeed;
@@ -58,6 +61,7 @@ public class TopDownShooterControler : MonoBehaviour
         ManageAim();
         ManageFire();
         ManagerInteraction();
+        ManageWeaponAiming();
     }
 
     private void ManagerInteraction()
@@ -77,6 +81,11 @@ public class TopDownShooterControler : MonoBehaviour
             OnFire?.Invoke(this , EventArgs.Empty);
             _fireLight.Fire();
             if(_animator)_animator.SetTrigger("Fire");
+            foreach (var particuleSystem in _fireParticuleSystems)
+            {
+                if (particuleSystem == null) continue;
+                particuleSystem.Play();
+            }
         }
     }
 
@@ -97,6 +106,20 @@ public class TopDownShooterControler : MonoBehaviour
             forward.y = 0;
             transform.forward = forward;
         }
+    }
+
+    private void ManageWeaponAiming()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(_firePoint.position, _aimVector, out hit))
+        {
+            _aimLineRenderer.SetPositions(new []{_firePoint.position, hit.point});
+        }
+        else
+        {
+            _aimLineRenderer.SetPositions(new []{_firePoint.position, _firePoint.position+_aimVector*20});
+        }
+        
     }
 
     protected virtual void ManageMovement() {

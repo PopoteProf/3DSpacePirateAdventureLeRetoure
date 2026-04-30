@@ -29,7 +29,7 @@ Material:
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2993
   stringTagMap: {}
   disabledShaderPasses:
   - MOTIONVECTORS
@@ -57,17 +57,17 @@ Material:
     - _Float: 0.2
     - _FlowScale1: 1
     - _FlowScale2: 1
-    - _FoamOffset: 1.03
+    - _FoamOffset: 0.27
     - _FoamPower: 4.56
     - _Metallic: 0.42
     - _NormalStrenght: 0.57
     - _NormalStrength: 1
     - _QueueControl: 0
-    - _QueueOffset: 0
+    - _QueueOffset: -7
     - _RippelsBorders: 0.311
     - _RippelsPower: 0.768
     - _Smoothness: 0.94
-    - _WaveCellDencity: 1.41
+    - _WaveCellDencity: 2.87
     - _WaveDiforLevel: 0.2
     - _WavePower: 7.23
     - _WaveSpeed: 2
@@ -76,7 +76,7 @@ Material:
     m_Colors:
     - _Color1: {r: 0.10720008, g: 0.52574265, b: 0.6886792, a: 0.4627451}
     - _Color2: {r: 0, g: 0.54398674, b: 1, a: 0.7529412}
-    - _DisformSpeed: {r: 1, g: 1, b: 0, a: 0}
+    - _DisformSpeed: {r: 0.5, g: 0.3, b: 0, a: 0}
     - _Flow1Speed: {r: 0.2, g: 0.1, b: 0, a: 0}
     - _Flow2Speed: {r: -0.1, g: -0.2, b: 0, a: 0}
     - _RippelColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}

@@ -38,8 +38,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _EmmisionMap:
+        m_Texture: {fileID: 2800000, guid: b31cb5b7d9303c84fbf89af9cad9c9dc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Maintex:
-        m_Texture: {fileID: 2800000, guid: 2557243b2df6a7744a01e31a7dbb23cd, type: 3}
+        m_Texture: {fileID: 2800000, guid: 09812c33b8644fd418217c56d2871c77, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
@@ -60,15 +64,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BorderSize: 0.1
+    - _BorderSize: 0.15
     - _DissolveProgression: 0
-    - _Metallic: 0
-    - _NoiseSize: 27.23
+    - _Metallic: 0.2
+    - _NoiseSize: 14
     - _NormalStrenght: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smoothness: 0.38
+    - _Smoothness: 0.5
     m_Colors:
     - _BorderColor: {r: 4, g: 1.446145, b: 0, a: 0}
+    - _EmmisionColor: {r: 194.0117, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

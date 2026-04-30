@@ -30,6 +30,7 @@ public class TopDownMonster : MonoBehaviour
     [SerializeField] private Renderer _renderer;
     [SerializeField] private AnimationCurve _dissolveCurve= AnimationCurve.EaseInOut(0,1,1,0);
     [SerializeField] private string _dissolvePropertyName ;
+    [SerializeField] private GameObject _PsDeath;
 
     private Collider _collider;
     private NavMeshAgent _navMeshAgent;
@@ -126,8 +127,9 @@ public class TopDownMonster : MonoBehaviour
             _timer = 0;
             
             Invoke("SetRagdollToIsKinematic", _delayToRagdollIsKinematic);
-            Destroy(gameObject ,_delayToDestroy);
+            Destroy(gameObject ,_delayToDestroy+5);
             GameStaticManager.OnPauseChange -= SetPause;
+            _PsDeath.SetActive(true);
             foreach (var rb in _ragdolRigidbody)
             {
                 rb.isKinematic = false;
