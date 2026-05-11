@@ -1,4 +1,7 @@
+using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 [RequireComponent(typeof(CharacterController))]
 public class ThirdPersonController : MonoBehaviour
 {
@@ -27,8 +30,22 @@ public class ThirdPersonController : MonoBehaviour
     private bool _isGrounded;
     private Vector3 _velocity;
     private float _currentMoveSpeed;
+    private InputAction _lookAction;
+    private InputAction _sprint;
     void Start() {
         _characterController = GetComponent<CharacterController>();
+        _lookAction = InputSystem.actions.FindAction("Look");
+        _lookAction.performed+= LookActionOnperformed;
+        _sprint = InputSystem.actions.FindAction("Sprint");
+    }
+
+    private void OnDestroy() {
+        _lookAction.performed-= LookActionOnperformed;
+    }
+
+    private void LookActionOnperformed(InputAction.CallbackContext obj)
+    {
+        
     }
 
     // Update is called once per frame
@@ -38,6 +55,8 @@ public class ThirdPersonController : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
         float xrot = Input.GetAxis("Mouse X");
+        Vector2 rot = _lookAction.ReadValue<Vector2>();
+        Debug.Log(rot);
         
         
         
@@ -50,7 +69,7 @@ public class ThirdPersonController : MonoBehaviour
         Vector3 moveVec = transform.forward * y + transform.right * x;
 
 
-        if (Input.GetKey(KeyCode.LeftShift)) {
+        if (_sprint.IsPressed()) {
             _currentMoveSpeed += _runAcceleration * Time.deltaTime;
         }
         else {
@@ -61,18 +80,18 @@ public class ThirdPersonController : MonoBehaviour
         moveVec *= _currentMoveSpeed*Time.deltaTime;
         _characterController.Move(moveVec);
         
-        transform.Rotate(Vector3.up, xrot*Time.smoothDeltaTime*_cameraSpeed);
+        transform.Rotate(Vector3.up, rot.x*Time.smoothDeltaTime*_cameraSpeed);
         
         
         
         Vector3 animVec = transform.InverseTransformDirection(_characterController.velocity);
         if (_animator)_animator.SetFloat("X", animVec.x);
         if (_animator)_animator.SetFloat("Y", animVec.z);
-        if (_animator)_animator.SetFloat("Rot", xrot);
+        if (_animator)_animator.SetFloat("Rot", rot.x);
 
         if (_aimTarget) {
             float yRot = Input.GetAxis("Mouse Y");
-            _aimheight = Mathf.Clamp(_aimheight + yRot * Time.smoothDeltaTime * _heightCameraSpeed, _minAimHeight,
+            _aimheight = Mathf.Clamp(_aimheight + rot.y * Time.smoothDeltaTime * _heightCameraSpeed, _minAimHeight,
                 _maxAimHeight);
             _aimTarget.localPosition = new Vector3(_aimTarget.localPosition.x, _aimheight, _aimTarget.localPosition.z);
 
